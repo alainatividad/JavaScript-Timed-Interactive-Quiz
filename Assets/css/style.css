@@ -1,0 +1,51 @@
+* {
+  font-size: 16px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+section {
+  border: 3px;
+  background-color: lightgrey;
+  width: 65vw;
+}
+
+section .text-heading {
+  margin: 30px;
+}
+
+.start-button {
+  width: 35vw;
+  height: 40px;
+}
+
+button {
+  background-color: #adefd1ff;
+  color: #00203fff;
+}
+
+p {
+  margin-left: 19px;
+}
