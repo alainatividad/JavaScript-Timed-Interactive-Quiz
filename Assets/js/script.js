@@ -73,12 +73,12 @@ var questionArray = [
         answer: "3"   
     },
     {
-        question: "How do you convert Objects to string using JSON?",
+        question: "How do you convert string to objects using JSON?",
         choice1: "JSON.parse()",
         choice2: "JSON.stringify()",
         choice3: "JSON.string()",
         choice4: "None of the above",
-        answer: "2"   
+        answer: "1"   
     }
 ]
 var gameStatus = false;
@@ -208,7 +208,9 @@ function gameOver() {
     clearInterval(timeInterval);
     // remove ul and li elements
     var ul = document.querySelector("#choices");
+    var footer = document.querySelector(".question-footer");
     boxEl.removeChild(ul);
+    boxEl.removeChild(footer);
 
     // replace header new text
     questionEl.textContent = (score >= Math.round(questionArray.length * 0.70)) ? "Congratulations! All done!" : "Better luck next time! All done!";
