@@ -14,12 +14,17 @@ nav {
   align-items: center;
 }
 
+li {
+  margin: 2px;
+  padding: 4px;
+}
+
 nav a {
   text-decoration: none;
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -28,11 +33,23 @@ main {
 
 section {
   border: 3px;
-  background-color: lightgrey;
   width: 65vw;
 }
 
-section .text-heading {
+button {
+  background-color: #adefd1ff;
+  color: #00203fff;
+  padding: 10px;
+  height: 2.5rem;
+  border-radius: 20px;
+}
+
+p {
+  margin-left: 19px;
+}
+
+.text-heading,
+.highscore {
   margin: 30px;
 }
 
@@ -41,11 +58,34 @@ section .text-heading {
   height: 40px;
 }
 
-button {
+#highscore-list > li:nth-child(odd) {
   background-color: #adefd1ff;
   color: #00203fff;
 }
 
-p {
-  margin-left: 19px;
+#highscore-list > li:nth-child(even) {
+  background-color: #00203fff;
+  color: #adefd1ff;
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+
+  .text-heading,
+  .highscore {
+    margin: 10px;
+  }
 }
