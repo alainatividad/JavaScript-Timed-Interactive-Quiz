@@ -1,15 +1,16 @@
+// get the elements
 var backButton = document.querySelector(".back-button");
 var resetButton = document.querySelector(".reset-button");
 var listEl = document.querySelector(".highscore-list-container");
 var buttonContainer = document.querySelector(".button-container");
 
-if (backButton !== null) {
+if (backButton) {
     backButton.addEventListener("click", function () {
-        document.location.href = "./index.html";
+        window.location.href = "./index.html";
     });
 };
 
-if (resetButton !== null) {
+if (resetButton) {
     resetButton.addEventListener("click", function () {
         localStorage.setItem("userScores", null);
 

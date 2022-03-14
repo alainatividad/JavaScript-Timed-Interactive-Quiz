@@ -19,6 +19,12 @@
                 <button class="reset-button">Clear Highscores</button>
             </div>
     </main>
-    <script src="./Assets/js/script-highscore.js"></script>
+    <!-- <script src="./Assets/js/script-highscore.js"></script> -->
+    <script src="./Assets/js/script.js"></script>
+    <!-- Added code here to load the scores -->
+    <script>
+        // if the page has finished loading, load the scores
+        window.onload = loadScores();
+    </script>
 </body>
 </html>

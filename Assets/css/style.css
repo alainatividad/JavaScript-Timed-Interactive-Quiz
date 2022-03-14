@@ -19,8 +19,10 @@ li {
   padding: 4px;
 }
 
-nav a {
+nav a,
+nav a:visited {
   text-decoration: none;
+  color: black;
 }
 
 main {
